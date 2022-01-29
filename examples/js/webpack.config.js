@@ -1,5 +1,5 @@
 const {join} = require('path')
-var PrefetchWebpackPlugin = require('../..');
+var HtmlPrefetchWebpackPlugin = require('../..');
 const htmlWwebpackPlugin = require('html-webpack-plugin')
 
 module.exports ={
@@ -22,7 +22,7 @@ module.exports ={
    },
    plugins:[
     new htmlWwebpackPlugin(),
-    new PrefetchWebpackPlugin({
+    new HtmlPrefetchWebpackPlugin({
         rel:'prefetch',
         include:['big-file']
     })

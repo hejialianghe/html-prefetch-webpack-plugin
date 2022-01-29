@@ -1,4 +1,4 @@
-# prefetch-webpack-plugin
+# html-prefetch-webpack-plugin
 
 > If you want to load some large resources during the browser's idle time, you can use this plugin. Prefetch works for non-first screen loading; Preload applies to the first screen loading
 
@@ -7,9 +7,9 @@
 ## Install
 
 ```bash
-npm i prefetch-webpack-plugin -D
+npm i html-prefetch-webpack-plugin -D
 # or
-yarn add prefetch-webpack-plugin -D
+yarn add html-prefetch-webpack-plugin -D
 ```
 
 ## Example
@@ -53,9 +53,10 @@ after:
 ### webpack config
 
 ```diff
+const HtmlPrefetchWebpackPlugin = require('html-prefetch-webpack-plugin')
    plugins:[
     new htmlWwebpackPlugin(),
-+   new PrefetchWebpackPlugin({
++   new HtmlPrefetchWebpackPlugin({
 +       rel:'prefetch',
 +       include:['big-file']
 +  })
