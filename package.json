@@ -1,6 +1,6 @@
 {
   "name": "html-prefetch-webpack-plugin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "如果你想在浏览器空闲时段加载一些较大的资源，那么你可以使用此插件",
   "main": "index.js",
   "exports": "./index.js",
