@@ -2,6 +2,7 @@
   "name": "html-prefetch-webpack-plugin",
   "version": "1.1.1",
   "description": "如果你想在浏览器空闲时段加载一些较大的资源，那么你可以使用此插件",
+  "author": "hejialiang <hejialianghe@qq.com> (https://github.com/hejialianghe/html-prefetch-webpack-plugin)",
   "main": "index.js",
   "exports": "./index.js",
   "types": "typings.d.ts",
@@ -18,14 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hejialianghe/prefetch-webpack-plugin.git"
+    "url": "git+https://github.com/hejialianghe/html-prefetch-webpack-plugin.git"
   },
-  "author": "hejialiang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hejialianghe/prefetch-webpack-plugin/issues"
+    "url": "https://github.com/hejialianghe/html-prefetch-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/hejialianghe/prefetch-webpack-plugin#readme",
+  "homepage": "https://github.com/hejialianghe/html-prefetch-webpack-plugin#readme",
   "devDependencies": {
     "commitizen": "^4.2.4",
     "css-loader": "^6.5.1",
