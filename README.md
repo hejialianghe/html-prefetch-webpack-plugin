@@ -65,5 +65,5 @@ after:
 
 | key（键）|  value（值）| Default（默认值）| remarks（备注）|
 | :-----: | :--------: | :------------: | :------: | 
-|  rel |  'prefetch'| 'preload' |  null |  指定类型  |
+|  rel |  'prefetch' or 'preload' |  null |  指定类型  |
 |  include |  string[] |  null |  需要预读取和预加载的chunk文件名|

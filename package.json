@@ -12,7 +12,9 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eStart": "node examples/start.js"
+    "eStart": "node examples/start.js",
+    "commit": "git-cz",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -25,11 +27,31 @@
   },
   "homepage": "https://github.com/hejialianghe/prefetch-webpack-plugin#readme",
   "devDependencies": {
+    "commitizen": "^4.2.4",
     "css-loader": "^6.5.1",
+    "cz-conventional-changelog": "^3.3.0",
     "html-webpack-plugin": "^5.5.0",
     "rimraf": "^3.0.2",
+    "standard-version": "^9.3.2",
     "style-loader": "^3.3.1",
     "webpack": "^5.67.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "html",
+    "html-webpack-plugin",
+    "prefetch-webpack-plugin"
+  ],
+  "semistandard": {
+    "ignore": [
+      "examples/*/dist/**/*.*"
+    ]
+  }
 }
