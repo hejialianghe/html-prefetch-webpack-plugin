@@ -8,7 +8,7 @@
     <img width="200" height="200"
       src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
-  <h1>Html Prefetch webpack Plugin</h1>
+  <h1>Html Prefetch Webpack Plugin</h1>
   <p>
   If you want to load some large resources during the browser's idle time, you can use this plugin. Prefetch works for non-first screen loading; Preload applies to the first screen loading
   </p>
