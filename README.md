@@ -1,7 +1,6 @@
-[![npm][npm]][https://img.shields.io/npm/v/html-webpack-plugin.svg]
-[![node][node]][node-url]
-![npm](https://img.shields.io/node/v/html-webpack-plugin.svg)
- [![GitHub forks](https://img.shields.io/github/forks/hejialianghe/html-prefetch-webpack-plugin.svg?style=flat-square)](https://github.com/hejialianghe/Senior-FrontEnd/network) [![GitHub stars](https://img.shields.io/github/stars/hejialianghe/html-webpack-plugin.svg?style=flat-square)](https://github.com/hejialianghe/Senior-FrontEnd/stargazers) [![GitHub issues](https://img.shields.io/github/issues/hejialianghe/html-webpack-plugin.svg?style=flat-square)](https://github.com/hejialianghe/Senior-FrontEnd/issues) [![GitHub last commit](https://img.shields.io/github/last-commit/hejialianghe/html-webpack-plugin.svg?style=flat-square)](https://github.com/hejialianghe/Senior-FrontEnd/commits/master)
+[![npm]](https://img.shields.io/npm/v/html-webpack-plugin.svg)]
+[![node](https://img.shields.io/node/v/html-webpack-plugin.svg)]
+[![GitHub forks](https://img.shields.io/github/forks/hejialianghe/html-prefetch-webpack-plugin.svg?style=flat-square)](https://github.com/hejialianghe/Senior-FrontEnd/network) [![GitHub stars](https://img.shields.io/github/stars/hejialianghe/html-webpack-plugin.svg?style=flat-square)](https://github.com/hejialianghe/Senior-FrontEnd/stargazers) [![GitHub issues](https://img.shields.io/github/issues/hejialianghe/html-webpack-plugin.svg?style=flat-square)](https://github.com/hejialianghe/Senior-FrontEnd/issues) [![GitHub last commit](https://img.shields.io/github/last-commit/hejialianghe/html-webpack-plugin.svg?style=flat-square)](https://github.com/hejialianghe/Senior-FrontEnd/commits/master)
 # html-prefetch-webpack-plugin
 
 > If you want to load some large resources during the browser's idle time, you can use this plugin. Prefetch works for non-first screen loading; Preload applies to the first screen loading
