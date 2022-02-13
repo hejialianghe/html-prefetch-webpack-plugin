@@ -25,24 +25,22 @@ yarn add html-prefetch-webpack-plugin -D
 
 ## Example
 
- before:
+before:
 
- ```html
- <!doctype html>
+```html
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Webpack App</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <script defer="defer" src="./main.025b57ab4efabca2e393.js"></script>
-</head>
+  </head>
 
-<body></body>
-
+  <body></body>
 </html>
+```
 
- ```
 after:
 
 ```js
@@ -61,6 +59,7 @@ after:
 
 </html>
 ```
+
 ### webpack config
 
 ```diff
@@ -73,9 +72,53 @@ const HtmlPrefetchWebpackPlugin = require('html-prefetch-webpack-plugin')
 +  })
    ]
 ```
+
 ## options
 
 | key（键）|  value（值）| Default（默认值）| Description（备注）|
 | :-----: | :--------: | :------------: | :------: | 
 |  rel |  'prefetch' or 'preload' |  null |  Specify the type  |
 |  include |  string[] |  null |  Chunk file names that need to be preread and preloaded |
+### include
+
+Include corresponds to an array containing the chunk names that you want to prefetch or preload.
+
+If you use import for asynchronous loading, the corresponding chunk name is login
+
+```js
+const Login = () => import(/* webpackChunkName: "login" */'@/components/Login')
+const HtmlPrefetchWebpackPlugin = require('html-prefetch-webpack-plugin')
+   plugins:[
+    new htmlWwebpackPlugin(),
++   new HtmlPrefetchWebpackPlugin({
++       rel:'prefetch',
++       include:['login']
++  })
+   ]
+```
+If you use Optimization to do code segmentation optimization
+
+```js
+{
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        zstdCodec: {
+          test: /[\\/]node_modules[\\/](wangeditor)[\\/]/,
+          name: 'wang-editor',
+          chunks: 'async',
+          priority: 20,
+        },
+      },
+    },
+  }
+}
+const HtmlPrefetchWebpackPlugin = require('html-prefetch-webpack-plugin')
+   plugins:[
+    new htmlWwebpackPlugin(),
++   new HtmlPrefetchWebpackPlugin({
++       rel:'prefetch',
++       include:['wang-editor']
++  })
+   ]
+```
